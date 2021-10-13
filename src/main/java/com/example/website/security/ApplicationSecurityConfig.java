@@ -67,8 +67,9 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 .deleteCookies("JSESSIONID", "remember-me")
                 .logoutSuccessUrl("/login")
                 .and()
-                .rememberMe().tokenValiditySeconds((int)TimeUnit.DAYS.toSeconds(21))
-                .key("yes");
+                .rememberMe(). //default = 20 days
+                tokenValiditySeconds((int)TimeUnit.DAYS.toSeconds(21))
+                .key("should be something secure");
     }
 
 
