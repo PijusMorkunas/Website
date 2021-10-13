@@ -1,4 +1,4 @@
-package firstweb.web.security;
+package  com.example.website.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -19,8 +19,9 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import java.util.concurrent.TimeUnit;
 
-import static firstweb.web.security.ApplicationUserPermission.ADMIN_WRITE;
-import static firstweb.web.security.ApplicationUserRole.*;
+import static com.example.website.security.ApplicationUserRole.ADMIN;
+import static com.example.website.security.ApplicationUserPermission.ADMIN_WRITE;
+import static com.example.website.security.ApplicationUserRole.*;
 
 @Configuration
 @EnableWebSecurity

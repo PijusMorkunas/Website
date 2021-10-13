@@ -1,4 +1,4 @@
-package firstweb.web.security;
+package com.example.website.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

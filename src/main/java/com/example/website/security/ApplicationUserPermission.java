@@ -1,4 +1,4 @@
-package firstweb.web.security;
+package com.example.website.security;
 
 public enum ApplicationUserPermission {
     CLIENT_READ("client:read"),

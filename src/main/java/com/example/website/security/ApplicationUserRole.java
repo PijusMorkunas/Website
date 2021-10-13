@@ -1,4 +1,4 @@
-package firstweb.web.security;
+package com.example.website.security;
 
 import com.google.common.collect.Sets;
 import org.springframework.security.core.GrantedAuthority;
@@ -7,7 +7,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static firstweb.web.security.ApplicationUserPermission.*;
+import static com.example.website.security.ApplicationUserPermission.*;
 
 public enum ApplicationUserRole {
     CLIENT(Sets.newHashSet(CLIENT_READ, CLIENT_WRITE)),
